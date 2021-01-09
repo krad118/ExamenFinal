@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "nh-examenFinal-angular10"
+    }
+  },
+  "defaultProject": "nh-examenFinal-angular10",
+  "cli": {
+    "analytics": "d05461d7-961f-4037-984e-24bf1634dea0"
+  }
 }
