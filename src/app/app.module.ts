@@ -7,13 +7,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { CoreModule } from 'src/app/core/core.module';
+import { CourseContainerComponent } from './home/components/course-container/course-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CourseContainerComponent
   ],
   imports: [
     BrowserModule,
