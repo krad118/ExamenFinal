@@ -1,1 +1,15 @@
-<p>instructors works!</p>
+<h1>Instructores expertos</h1>
+<div class="row g-4">
+    <div class="col" *ngFor="let i of instructors">
+        <div class="card">
+            <img [src]="i.image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{ i.name }} {{ i.lastName }}</h5>
+              <p class="card-text">{{ i.educationTitle }}</p>
+            </div>
+            <div class="card-footer">
+                30 cursos
+            </div>
+        </div>
+    </div>
+</div>
