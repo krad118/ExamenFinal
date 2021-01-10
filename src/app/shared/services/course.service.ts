@@ -8,10 +8,18 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class CourseService {
+  apiUrl = `${environment.apiUrl}course/`;
+  constructor(private http: HttpClient) { }
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  getCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.apiUrl}`);
+  }
 
-  // llamada al servicio
+  getCoursesFeatured(): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.apiUrl}?featured=1`);
+  }
+
+  getCourse(id: number): Observable<Course> {
+    return new Observable<Course>(() => {});
+  }
 }

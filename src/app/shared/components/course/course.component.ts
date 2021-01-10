@@ -7,11 +7,9 @@ import { Course } from 'src/app/shared/interfaces/course';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-
   @Input() course: Course;
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

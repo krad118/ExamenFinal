@@ -1,1 +1,14 @@
-<p>course-container works!</p>
+<div class="container">
+    <div class="row">
+      <h5 class="text-center">Popular Courses</h5>
+      <h3 class="text-center">Available Courses</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <app-course *ngFor="let course of courses" [course]="course"></app-course>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-cols-1">
+        <button [routerLink]="['/courses']" class="btn btn-success rounded-0 py-2">VIEW ALL COURSES</button>
+      </div>
+    </div>
+</div>

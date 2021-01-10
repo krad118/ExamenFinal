@@ -1,1 +1,11 @@
-<p>course works!</p>
+<div class="card">
+    <img [src]="course.image" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{ course.name }}</h5>
+        <p class="card-text">{{ course.summary }}</p>
+    </div>
+    <div class="card-footer">
+        Precio: {{ course.price }}
+        <span style="float:right">Estudiantes: {{ course.students }}</span>
+    </div>
+</div>

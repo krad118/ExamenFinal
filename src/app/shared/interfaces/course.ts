@@ -1,14 +1,15 @@
 export interface Course {
     id: number;
-    title: string;
+    name: string;
+    featured: boolean;
     image: string;
-    price: number;
-    category: number;
-    description: string;
-    instructor: string;
-    duration: number;
-    numLessons: number;
-    numStudents: number;
     language: string;
-    startDate: string;
+    price: number;
+    duration: number;
+    lessons: number;
+    deadline: string;
+    students: number;
+    summary: string;
+    instructor: number;
+    category: number;
 }
