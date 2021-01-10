@@ -1,1 +1,8 @@
-<p>login-form works!</p>
+<form [formGroup]="loginForm">
+    <input type="text" id="username" class="fadeIn second" name="username"
+      placeholder="Usuario" autocomplete="off" formControlName="username"
+      [ngClass]="{'is-invalid': f.username.invalid && f.username.touched, 'is-valid': f.username.valid && f.username.touched}">
+    <input type="password" id="password" class="fadeIn third" name="password"
+      placeholder="Password" autocomplete="off" formControlName="password">
+    <input type="submit" class="fadeIn fourth" value="Login">
+</form>
