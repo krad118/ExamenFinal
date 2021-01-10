@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Course } from 'src/app/shared/interfaces/course';
 
 @Component({
@@ -8,8 +9,12 @@ import { Course } from 'src/app/shared/interfaces/course';
 })
 export class CourseComponent implements OnInit {
   @Input() course: Course;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  viewCourse(id: number) {
+    this.router.navigate(['/courses', id]);
   }
 }

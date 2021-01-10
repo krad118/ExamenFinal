@@ -20,6 +20,6 @@ export class CourseService {
   }
 
   getCourse(id: number): Observable<Course> {
-    return new Observable<Course>(() => {});
+    return this.http.get<Course>(`${this.apiUrl}${id}/`);
   }
 }
